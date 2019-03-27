@@ -25,7 +25,6 @@ import enumToArray from "./enumToArray"
 const arr = enumToArray(character)
 
 console.log(arr) // ["jerry", "george", "kramer", "elaine"]
-
 ```
 
 Ammend the function to fit your needs, i.e. an Object of values, instead of the array of strings, etc.
