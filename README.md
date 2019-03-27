@@ -6,22 +6,25 @@
 Define an Enum somewhere, i.e.
 
 ```
-enum Status {
-  ACTIVE = "active",
-  DELETED = "deleted",
-  INACTIVE = "inactive"
+enum Character {
+  JERRY = "jerry",
+  GEORGE = "george",
+  KRAMER = "kramer",
+  ELAINE = "elaine"
 }
+
+export default Character
 ```
 
 When you want to use the values as an array within your code, for example within a `<Select />` component, pass the Enum into the function, and those values can then be used like any other array.
 
 ```
-import status from "./enums/status"
+import character from "./enums/character"
 import enumToArray from "./enumToArray"
 
-const arr = enumToArray(status)
+const arr = enumToArray(character)
 
-console.log(arr) // ["active", "deleted", "inactive"]
+console.log(arr) // ["jerry", "george", "kramer", "elaine"]
 
 ```
 
